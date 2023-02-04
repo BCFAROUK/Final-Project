@@ -1,0 +1,14 @@
+<div class="edit-todo" style="text-align: center;">
+  <div class="edit-todo-title">
+    <h1>Edit Task</h1>
+  
+  </div>
+  <div class="edit-todo-main">
+    <form action="/?_method=PUT" method="post">
+      <input type="hidden" name="_id" value="<%= todo._id %>">
+      <input type="text" name="GoMyCode" id="GoMyCode" value="<%= todo.GoMyCode %>" autocomplete="off" />
+      <button type="submit"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Edit Task</button>
+    </form>
+    <a href="/"><i class="fa-solid fa-sign-out"></i>&nbsp;Back</a>
+  </div>
+</div>

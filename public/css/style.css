@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kalam", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  background: #010a11b9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content-title img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0px 3px 3px #000000c5);
+}
+
+.content-title img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+  filter: drop-shadow(0px 3px 3px #a1000071);
+}
+
+.fa-pen-to-square {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-pencil {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-trash-can {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-plus-circle {
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-plus {
+  background: #fdfc47; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24fe41,
+    #fdfc47
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24fe41,
+    #fdfc47
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-sign-out {
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 1rem;
+  }
+}
+.container .content {
+  padding: 1rem 2rem;
+  background-color: #ffffffc5;
+  border-radius: 4px;
+}
+.container .content-title h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list-item p {
+  font-weight: bold;
+}
+.list-item {
+  border: 1px solid #ff000057;
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e437677,
+    #2b58766b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e43766c,
+    #2b587671
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 400px) {
+  .container .content-title h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .container .content-title h1 {
+    font-size: 1.3rem;
+  }
+}
+.container .content-main {
+  width: 100%;
+}
+.container .content-main a {
+  display: inline-block;
+  width: 100%;
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  background-color: #0853b4;
+  border-radius: 5px;
+  color: #fff;
+}
+.container .content-main a:hover {
+  background-color: #3379ca;
+  color: #fff;
+}
+.container .content-title,
+.container .content-main {
+  margin-bottom: 2rem;
+}
+.container .content-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow: auto;
+}
+.container .content-list .list-item p {
+  font-size: 1rem;
+}
+.container .content-list .list-item-action {
+  display: flex;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .container .content-list .list-item-action {
+    flex-direction: column;
+  }
+}
+.container .content-list .list-item-action a {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #0853b4;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.container .content-list .list-item-action a:hover {
+  background-color: #3379ca;
+  color: #fff;
+}
+.container .content-list .list-item-action form button {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #d33303;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+.container .content-list .list-item-action form button:hover {
+  background-color: #b92c01;
+  color: #fff;
+}
+.container .add-todo {
+  padding: 1rem 2rem;
+  background-color: #ffffffdc;
+  border-radius: 4px;
+  width: 30%;
+}
+@media screen and (max-width: 900px) {
+  .container .add-todo {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .add-todo {
+    width: 100%;
+  }
+}
+.container .add-todo-title,
+.container .add-todo-main {
+  margin-bottom: 1rem;
+}
+.container .add-todo-title h1 {
+  margin-bottom: 8px;
+}
+.container .add-todo-title p {
+  color: #ff1e00;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.container .add-todo-main form {
+  margin-bottom: 1.5rem;
+}
+.container .add-todo-main form input,
+.container .add-todo-main form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+.container .add-todo-main form input {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.container .add-todo-main form button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #ca3333;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.container .add-todo-main form button:hover {
+  background-color: #dd3939;
+  color: #fff;
+}
+.container .add-todo-main a {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #3e33dfad;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+.container .add-todo-main a:hover {
+  background-color: #3f33dfd3;
+  color: #fff;
+}
+.container .edit-todo {
+  padding: 1rem 2rem;
+  background-color: #ffffffc5;
+  border-radius: 4px;
+  width: 30%;
+}
+@media screen and (max-width: 900px) {
+  .container .edit-todo {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .edit-todo {
+    width: 100%;
+  }
+}
+.container .edit-todo-title,
+.container .edit-todo-main {
+  margin-bottom: 1rem;
+}
+.container .edit-todo-title h1 {
+  margin-bottom: 8px;
+}
+.container .edit-todo-title p {
+  color: #ff1e00;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.container .edit-todo-main form {
+  margin-bottom: 1.5rem;
+}
+.container .edit-todo-main form input,
+.container .edit-todo-main form button {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+.container .edit-todo-main form input {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+.container .edit-todo-main form button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #ca3333;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.container .edit-todo-main form button:hover {
+  background-color: #dd3939;
+  color: #fff;
+}
+.container .edit-todo-main a {
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: #3e33dfad;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+.container .edit-todo-main a:hover {
+  background-color: #3f33dfd3;
+  color: #fff;
+}
+.container .not-found {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .not-found h1 {
+  font-size: 5rem;
+}
+.container .not-found h3 {
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
