@@ -2,6 +2,13 @@
 
 <br>
 
+
+<picture>
+  <img alt="Todo List - Final Project of GoMyCode By FAROUK" src="https://i.imgur.com/mbzoFlj.png">
+</picture>
+
+<br>
+
 ## Install the Required Dependencies
 
 ```
